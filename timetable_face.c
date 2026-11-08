@@ -54,7 +54,7 @@
     A number will also be displayed on the right top,
     to indicate the current debug mode.
 */
-#define DEV_ON
+//#define DEV_ON
 
 #ifdef DEV_ON
 #define REACTION_TIME 1
@@ -90,47 +90,49 @@ const char* NO_COUNTDOWN_SYMBOL = "------"; //Only 6 char long
 
 const timetable_period_name_t TIMETABLE_BASE[7][DAILY_PERIODS_COUNT] = {
     //Set your timetable here
-    [0] = {"CLG", "MTH", "PHY", "CPS", "CML", "PSY", "CHN", "EML"},
-    [1] = {"CML", "BIO", "GPE", "MTH", "MSC", "EML", "P E", "SRP"},
-    [2] = {"MTH", "EML", "CHN", "CHN", "PHY", "HTR", "P E", "CML"},
-    [3] = {"CHN", "CMT", "ART", "EAB", "DRM", "MTH", "CML", "MOR"},
-    [4] = {"MTH", "CHN", "EML", "EML", "CML", "SWI", "CHE", "ASB"}
+    //The comments are an example
+    //[0] = {"CLG", "MTH", "PHY", "CPS", "CML", "PSY", "CHN", "EML"},
+    //[1] = {"CML", "BIO", "GPE", "MTH", "MSC", "EML", "P E", "SRP"},
+    //[2] = {"MTH", "EML", "CHN", "CHN", "PHY", "HTR", "P E", "CML"},
+    //[3] = {"CHN", "CMT", "ART", "EAB", "DRM", "MTH", "CML", "MOR"},
+    //[4] = {"MTH", "CHN", "EML", "EML", "CML", "SWI", "CHE", "ASB"}
 };
 
 const timetable_period_range_t PERIOD_RANGES[DAILY_PERIODS_COUNT] = {
     //Set when your periods start and finish. Remember to set all of them in time order!
-    {
-        .start = day_time(8, 20),
-        .end = day_time(9, 0)
-    },
-    {
-        .start = day_time(9, 15),
-        .end = day_time(9, 55)
-    },
-    {
-        .start = day_time(10, 40),
-        .end = day_time(11, 20)
-    },
-    {
-        .start = day_time(11, 35),
-        .end = day_time(12, 15)
-    },
-    {
-        .start = day_time(13, 15),
-        .end = day_time(13, 55)
-    },
-    {
-        .start = day_time(14, 10),
-        .end = day_time(14, 50)
-    },
-    {
-        .start = day_time(15, 5),
-        .end = day_time(15, 45)
-    },
-    {
-        .start = day_time(16, 0),
-        .end = day_time(16, 40)
-    },
+    //Comments are an example
+    // {
+    //     .start = day_time(8, 20),
+    //     .end = day_time(9, 0)
+    // },
+    // {
+    //     .start = day_time(9, 15),
+    //     .end = day_time(9, 55)
+    // },
+    // {
+    //     .start = day_time(10, 40),
+    //     .end = day_time(11, 20)
+    // },
+    // {
+    //     .start = day_time(11, 35),
+    //     .end = day_time(12, 15)
+    // },
+    // {
+    //     .start = day_time(13, 15),
+    //     .end = day_time(13, 55)
+    // },
+    // {
+    //     .start = day_time(14, 10),
+    //     .end = day_time(14, 50)
+    // },
+    // {
+    //     .start = day_time(15, 5),
+    //     .end = day_time(15, 45)
+    // },
+    // {
+    //     .start = day_time(16, 0),
+    //     .end = day_time(16, 40)
+    // },
 };
 
 static void timetable_face_config_modify_period(
