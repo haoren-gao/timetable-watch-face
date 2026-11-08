@@ -1,5 +1,7 @@
 # Timetable Watch Face for Sensor Watch
 
+![Preview](demo/screenshot.png)
+
 A customizable school timetable watch face for [Sensor Watch](https://www.sensorwatch.net/), built with [Second Movement](https://github.com/joeycastillo/second-movement).
 
 This watch face shows your upcoming class and a countdown based on your daily timetable. You can customize the timetable to match your own school schedule.
